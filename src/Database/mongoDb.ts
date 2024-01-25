@@ -4,7 +4,7 @@ const client : any = new MongoClient( uri );
 
   async function dataBase ( collectionName : any ) {
     let dbClient : any = await client.connect();
-    let mydb : any = dbClient.db("");
+    let mydb : any = dbClient.db("BYD-db");
        return mydb.collection( collectionName )
   }
 
