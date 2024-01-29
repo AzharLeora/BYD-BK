@@ -1,5 +1,5 @@
 const MongoClient : any = require( "mongodb" ).MongoClient;
-const uri : any = "mongodb+srv://navinvae:navin8888@cluster0.9d1xpp8.mongodb.net/?retryWrites=true&w=majority";
+const uri : any = "mongodb+srv://navinvae:navin369@cluster0.9d1xpp8.mongodb.net/?retryWrites=true&w=majority";
 const client : any = new MongoClient( uri );
 
   async function dataBase ( collectionName : any ) {
@@ -8,4 +8,6 @@ const client : any = new MongoClient( uri );
        return mydb.collection( collectionName )
   }
 
-module.exports = {dataBase}
+export { dataBase }
+
+
